@@ -41,7 +41,13 @@ class Dog
   
     self.new(new[0],new[1],new[2])
  end 
+ def self.find_by_name(name)
+   sql = <<-SQL
+   SELECT name FROM dogs 
+   SQL
  
+ 
+ end
  
  
  
