@@ -31,8 +31,8 @@ class Dog
    name = array[1]
    breed = array[2]
    
-   self.new(id, name:,breed:)
-  
+   self.new(id, name,breed)
+  binding.pry 
   end
  
  def save
