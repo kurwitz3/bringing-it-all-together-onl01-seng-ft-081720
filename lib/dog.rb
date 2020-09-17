@@ -30,6 +30,7 @@ class Dog
    id = array[0]
    name = array[1]
    breed = array[2]
+   binding.pry 
   end
  
  def save
