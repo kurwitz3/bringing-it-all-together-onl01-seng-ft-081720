@@ -30,9 +30,6 @@ class Dog
    id = array[0]
    name = array[1]
    breed = array[2]
-   
-   self.new(name,breed)
-  binding.pry 
   end
  
  def save
