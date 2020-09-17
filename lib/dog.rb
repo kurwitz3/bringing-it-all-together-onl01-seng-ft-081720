@@ -13,7 +13,7 @@ class Dog
    sql = <<-SQL
     CREATE TABLE IF NOT EXISTS dogs (
     id INTEGER PRIMARY KEY,
-    name TEXT,
+    name TEXT,2
     breed TEXT)
    SQL
    DB[:conn].execute(sql)
@@ -27,9 +27,9 @@ class Dog
  end 
  
  def self.new_from_db(array)
-   id = array[0]
-   name = array[1]
-   breed = array[2]
+   id: => array[0]
+   name: =>array[1]
+   breed => array[2]
    binding.pry 
   end
  
