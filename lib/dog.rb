@@ -27,9 +27,7 @@ class Dog
  end 
  
  def self.new_from_db(array)
-   hash = { id: => array[0],
-   name: => array[1],
-   breed: => array[2]}
+   hash = { id: => array[0], name: => array[1], breed: => array[2] }
    self.new(hash)
   end
  
