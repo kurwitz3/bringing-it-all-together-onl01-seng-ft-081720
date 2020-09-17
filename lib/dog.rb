@@ -27,10 +27,11 @@ class Dog
  end 
  
  def self.new_from_db(array)
- 
- 
- 
- end
+   id = array[0]
+   name[1]
+   breed[2]
+   self.new(id, name , grade)
+  end
  
  def save
    sql = <<-SQL
