@@ -31,7 +31,7 @@ class Dog
    name = array[1]
    breed = array[2]
    
-   self.new(id, name,breed)
+   self.new
   binding.pry 
   end
  
