@@ -45,7 +45,9 @@ class Dog
    sql = <<-SQL
    SELECT name FROM dogs 
    SQL
- 
+  DB[:conn].execute(sql,name).collect do |row|
+    binding.pry 
+    self.new_from_db(row)
  
  end
  
