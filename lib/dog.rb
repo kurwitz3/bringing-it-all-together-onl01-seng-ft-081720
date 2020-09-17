@@ -31,6 +31,7 @@ class Dog
    name = [1]
    breed = [2]
    
+    binding.pry 
    new = self.new(id, name,breed)
    new 
   
