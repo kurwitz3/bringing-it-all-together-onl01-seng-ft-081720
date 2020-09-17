@@ -28,8 +28,8 @@ class Dog
  
  def self.new_from_db(array)
    id = array[0]
-   name = [1]
-   breed = [2]
+   name = array[1]
+   breed = array[2]
    
     binding.pry 
    new = self.new(id, name,breed)
