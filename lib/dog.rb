@@ -32,6 +32,7 @@ class Dog
    breed = [2]
    new = self.new(id, name,breed)
    new 
+   binding.pry 
   end
  
  def save
