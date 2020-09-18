@@ -73,4 +73,11 @@ def self.find_or_create_by(name:,breed:)
      end 
      new_dog
    end
+   
+   def update 
+    sql = "UPDATE dogs SET name = ? ,breed = ? WHERE ID = ?"
+    
+   
+   
+   end 
 end 
