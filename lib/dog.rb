@@ -35,11 +35,10 @@ class Dog
    sql = <<-SQL
    INSERT INTO dogs (name,breed) Values (?,?)
    SQL
-  new =  DB[:conn].execute(sql, self.name, self.breed)
+   DB[:conn].execute(sql, self.name, self.breed)
 
    @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
-  
-   self.new(new[0],new[1],new[2])
+    self 
  end 
 
  def self.find_by_name(name)
