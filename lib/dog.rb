@@ -41,6 +41,8 @@ class Dog
     self 
  end 
  def self.create(hash)
+ binding.pry
+ end 
 
  def self.find_by_name(name)
    sql = <<-SQL
