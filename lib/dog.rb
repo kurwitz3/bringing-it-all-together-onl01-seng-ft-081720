@@ -70,7 +70,7 @@ def self.find_or_create_by(name:,breed:)
      if new 
        new_dog = self.new_from_db(new)
      else 
-       new = self.create(name: name, breed: breed )
+       new_dog  = self.create(name: name, breed: breed )
      end 
      new_dog
    end
