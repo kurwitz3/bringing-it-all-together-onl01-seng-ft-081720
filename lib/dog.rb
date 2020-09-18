@@ -41,7 +41,9 @@ class Dog
     self 
  end 
  def self.create(hash)
- binding.pry
+   new = self.new(hash)
+   new.save
+   new
  end 
 
  def self.find_by_name(name)
