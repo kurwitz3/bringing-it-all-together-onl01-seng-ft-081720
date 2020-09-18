@@ -45,14 +45,13 @@ class Dog
    new.save
    new
  end 
+ 
  def self.find_by_id(id)
       sql = <<-SQL
        SELECT * FROM dogs WHERE id = ?
       SQL
       DB[:conn].execute(sql,id).map do |row|
-      
-        self.new_from_db(row)
-        
+       self.new_from_db(row)
   end.first
  end 
 
@@ -63,9 +62,10 @@ class Dog
   DB[:conn].execute(sql,name).collect do |row|
     binding.pry 
     self.new_from_db(row)
- 
  end
- end
+end
+
+def self.find_or_create_by
  
  
 end 
