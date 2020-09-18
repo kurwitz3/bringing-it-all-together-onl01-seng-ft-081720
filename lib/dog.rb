@@ -31,16 +31,16 @@ class Dog
    self.new(hash)
   end
  
- #def save
-   #sql = <<-SQL
-   #INSERT INTO dogs (name,breed) Values (?,?)
-   #SQL
-  #new =  DB[:conn].execute(sql, self.name, self.breed)
+ def save
+   sql = <<-SQL
+   INSERT INTO dogs (name,breed) Values (?,?)
+   SQL
+  new =  DB[:conn].execute(sql, self.name, self.breed)
 
-   #@id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
+   @id = DB[:conn].execute("SELECT last_insert_rowid() FROM dogs")[0][0]
   
-   # self.new(new[0],new[1],new[2])
- #end 
+   self.new(new[0],new[1],new[2])
+ end 
 
  def self.find_by_name(name)
    sql = <<-SQL
