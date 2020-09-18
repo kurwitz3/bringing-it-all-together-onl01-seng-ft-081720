@@ -72,6 +72,6 @@ def self.find_or_create_by(name:,breed:)
      else 
        new = self.create(name: name, breed: breed )
      end 
-     new
+     new_dog
    end
 end 
